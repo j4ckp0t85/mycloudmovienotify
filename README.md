@@ -67,6 +67,8 @@ The scripts uses:
 - Google Drive Rest API
 - Google Youtube API
 - [PHP GoogleTranslate library](https://github.com/statickidz/php-google-translate-free)
+- [mutt](http://www.mutt.org/)
+- [inotifywait](https://linux.die.net/man/1/inotifywait)
 
 You have to download them separately
 
