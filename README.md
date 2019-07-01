@@ -56,7 +56,7 @@ Now we need to register a new entry service in the /etc/init.d folder using the 
 Edit this file to define which folder will be monitored and the recipients that will receives the emails notification.
 
 This custom service will activate on every boot a pipe sequence that:
-1. watch a folder specified in the .sh file with .mkv extension (case insensitive)
+1. watch a folder specified (recursively) in the .sh file with .mkv extension (case insensitive)
 2. pass the filename to the scripts to be processed
 3. send emails to recipients 
 
