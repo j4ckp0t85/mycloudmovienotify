@@ -9,6 +9,8 @@ When a file is added, the scripts
 
 For example, you want to notify your friends about your new matrioska files added on your WD My cloud nas.
 
+Using your fantasy you could easily create your own Kodi/Plex - like - scraper.
+
 Remember: *you do it at your own risk.*
 
 # In depth 
