@@ -88,8 +88,7 @@
 			//CHIAMATA API A TMDB. RESTITUISCE UN JSON CON DIVERSI RISULTATI. IN CIMA IL PIU PERTINENTE    
 		    file_put_contents("tmdb.json",exec("curl -s --request GET \
 		    --url \"https://api.themoviedb.org/3/search/movie?query=$stringaFilmPulita&language=it-IT&certification_country=IT&api_key=$apikey\" \
-		    --header 'content-type: application/json' \
-		    --data '{}'
+		    --header 'content-type: application/json'
 		"));
 		    
 		    //LAVORO IL JSON RICEVUTO E SALVATO
@@ -113,8 +112,7 @@
 				if(($anno>1999)&&((int)substr($res->results['0']->{'release_date'},0,4))<2015){	    
 					file_put_contents("tmdb.json",exec("curl -s --request GET \
 					--url \"https://api.themoviedb.org/3/search/movie?query=$stringaFilmPulita&language=it-IT&year=$anno&certification_country=IT&api_key=$apikey\" \
-					--header 'content-type: application/json' \
-					--data '{}'
+					--header 'content-type: application/json'
 					"));
 					$res=json_decode(file_get_contents("tmdb.json")); //ricarico il json con le info aggiornate del film con l'anno corretto
 				}
@@ -159,8 +157,7 @@
     			if($trama==''){
 					file_put_contents("tmdb.json",exec("curl -s --request GET \
 					--url \"https://api.themoviedb.org/3/search/movie?query=$stringaFilmPulita&language=en-US&api_key=$apikey\" \
-					--header 'content-type: application/json' \
-					--data '{}'
+					--header 'content-type: application/json'
 					"));
 					$risultatiEN=json_decode(file_get_contents("tmdb.json"));
 					$tramaEN=htmlentities($risultatiEN->results['0']->{'overview'});
